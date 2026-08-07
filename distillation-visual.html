@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Founder Park 知识蒸馏 · 2026.1-7</title>
+<style>
+:root{--bg:#fff;--bg2:#f7f6f3;--bg3:#f1efe8;--t1:#1a1a1a;--t2:#6b6b6b;--t3:#999;--bd:rgba(0,0,0,.08);--bd2:rgba(0,0,0,.15);--r:12px;--rs:8px;
+--p50:#EEEDFE;--p200:#AFA9EC;--p600:#534AB7;--p800:#3C3489;
+--t50:#E1F5EE;--t200:#5DCAA5;--t600:#0F6E56;--t800:#085041;
+--c50:#FAECE7;--c200:#F0997B;--c600:#993C1D;--c800:#712B13;
+--k50:#FBEAF0;--k200:#ED93B1;--k600:#993556;--k800:#72243E;
+--b50:#E6F1FB;--b200:#85B7EB;--b600:#185FA5;--b800:#0C447C;
+--g50:#EAF3DE;--g200:#97C459;--g600:#3B6D11;--g800:#27500A;
+--a50:#FAEEDA;--a200:#EF9F27;--a600:#854F0B;--a800:#633806;
+--y50:#F1EFE8;--y200:#B4B2A9;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:var(--bg3);color:var(--t1);line-height:1.6;font-size:14px}
+.ctn{max-width:960px;margin:0 auto;padding:0 16px}
+.hero{background:var(--bg);padding:48px 0 40px;border-bottom:.5px solid var(--bd)}
+.hero h1{font-size:28px;font-weight:600;margin-bottom:8px;letter-spacing:-.5px}
+.hero .sub{font-size:15px;color:var(--t2);margin-bottom:20px}
+.meta{display:flex;flex-wrap:wrap;gap:8px}
+.tag{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500}
+.t-p{background:var(--p50);color:var(--p800)}.t-t{background:var(--t50);color:var(--t800)}.t-c{background:var(--c50);color:var(--c800)}.t-b{background:var(--b50);color:var(--b800)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:24px 0}
+.sc{background:var(--bg);border-radius:var(--rs);padding:16px;text-align:center}
+.sc .n{font-size:28px;font-weight:600;letter-spacing:-1px}.sc .l{font-size:12px;color:var(--t2);margin-top:2px}
+.sec{background:var(--bg);margin-top:12px;border-radius:var(--r);overflow:hidden}
+.sh{padding:20px 24px 12px;border-bottom:.5px solid var(--bd)}.sh h2{font-size:17px;font-weight:600}.sh .d{font-size:13px;color:var(--t2);margin-top:2px}
+.sb{padding:20px 24px}
+.eq{font-size:16px;font-weight:500;padding:16px 20px;background:var(--bg2);border-radius:var(--rs);border-left:3px solid var(--p200);margin-bottom:16px}
+.et{width:100%;border-collapse:collapse;font-size:13px}
+.et th{text-align:left;padding:8px 12px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);font-size:12px}
+.et td{padding:10px 12px;border-bottom:.5px solid var(--bd);vertical-align:top}
+.et tr:last-child td{border-bottom:none}
+.gi svg{width:100%;height:auto}
+.cg{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.kc{border-radius:var(--r);overflow:hidden;border:.5px solid var(--bd);transition:transform .15s,box-shadow .15s);cursor:pointer}
+.kc:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,.08)}
+.kh{padding:14px 16px 10px}.kh .kt{font-size:14px;font-weight:600}.kh .ks{font-size:11px;margin-top:2px}
+.kb{padding:0 16px 14px;font-size:12px;color:var(--t2);line-height:1.7}
+.kb .kl{font-weight:600;color:var(--t1);font-size:11px;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;margin-top:8px}
+.kb ul{list-style:none;padding-left:0}.kb li{padding-left:10px;position:relative}.kb li::before{content:"\00B7";position:absolute;left:0;font-weight:700}
+.kf{padding:8px 16px;font-size:10px;color:var(--t3);border-top:.5px solid var(--bd)}
+.kp .kh{background:var(--p50)}.kp .kt{color:var(--p800)}.kp .ks{color:var(--p600)}
+.kb2 .kh{background:var(--b50)}.kb2 .kt{color:var(--b800)}.kb2 .ks{color:var(--b600)}
+.kk .kh{background:var(--k50)}.kk .kt{color:var(--k800)}.kk .ks{color:var(--k600)}
+.kt2 .kh{background:var(--t50)}.kt2 .kt{color:var(--t800)}.kt2 .ks{color:var(--t600)}
+.kc2 .kh{background:var(--c50)}.kc2 .kt{color:var(--c800)}.kc2 .ks{color:var(--c600)}
+.kg .kh{background:var(--g50)}.kg .kt{color:var(--g800)}.kg .ks{color:var(--g600)}
+.ka .kh{background:var(--a50)}.ka .kt{color:var(--a800)}.ka .ks{color:var(--a600)}
+.tl{position:relative;padding-left:24px}
+.tl::before{content:"";position:absolute;left:6px;top:0;bottom:0;width:1px;background:var(--bd2)}
+.ti{position:relative;margin-bottom:16px}
+.ti::before{content:"";position:absolute;left:-22px;top:6px;width:10px;height:10px;border-radius:50%;border:2px solid var(--bg)}
+.cg2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.cc{border-radius:var(--rs);padding:14px 16px;border:.5px solid var(--bd)}
+.cc h4{font-size:13px;font-weight:600;margin-bottom:8px}
+.cc .vs{display:flex;gap:8px;align-items:flex-start;margin-bottom:6px}
+.cc .vss{flex:1;font-size:12px;color:var(--t2)}
+.cc .vsp{font-size:11px;color:var(--t3);font-weight:600;padding-top:1px}
+.cc .res{font-size:11px;padding:6px 8px;border-radius:4px;margin-top:4px;font-weight:500}
+.rt{width:100%;border-collapse:collapse;font-size:13px}
+.rt th{text-align:left;padding:8px 12px;font-weight:500;color:var(--t2);border-bottom:1px solid var(--bd);font-size:12px}
+.rt td{padding:10px 12px;border-bottom:.5px solid var(--bd)}.rt td:first-child{font-weight:500}
+.ctr{display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid var(--bd)}
+.tab{padding:8px 16px;font-size:13px;font-weight:500;color:var(--t2);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.tab:hover{color:var(--t1)}.tab.act{color:var(--p800);border-bottom-color:var(--p200)}
+.tp{display:none}.tp.act{display:block}
+footer{text-align:center;padding:32px 0;font-size:12px;color:var(--t3)}
+@media(max-width:640px){.stats{grid-template-columns:repeat(2,1fr)}.cg2{grid-template-columns:1fr}.cg{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="hero"><div class="ctn">
+<h1>Founder Park 知识蒸馏</h1>
+<p class="sub">2026年1月 — 7月 · 51篇深度文章 · 255个知识点 · 7大核心模型</p>
+<div class="meta">
+<span class="tag t-p">本质工坊方法论</span><span class="tag t-t">三阶蒸馏</span><span class="tag t-c">坡度理解</span><span class="tag t-b">类-属性-方法-路由</span>
+</div>
+<div class="stats">
+<div class="sc"><div class="n" style="color:var(--p600)">51</div><div class="l">深度文章</div></div>
+<div class="sc"><div class="n" style="color:var(--b600)">255</div><div class="l">知识点</div></div>
+<div class="sc"><div class="n" style="color:var(--t600)">7</div><div class="l">核心模型</div></div>
+<div class="sc"><div class="n" style="color:var(--c600)">4</div><div class="l">矛盾张力</div></div>
+</div>
+</div></div>
+
+<div class="ctn" style="padding-top:12px">
+
+<div class="sec"><div class="sh"><h2>一、是什么 · 知识体系的本质</h2><p class="d">30秒抓住核心 → 2分钟理解框架 → 按需深入</p></div>
+<div class="sb">
+<div class="eq">在AI从「对话工具」走向「自主智能体」的范式转移期，为AI创业者提供的一套「从模型到产品到组织到全球化」的全链路实战认知系统。</div>
+<table class="et"><thead><tr><th>推导要素</th><th>逻辑分析</th><th>结论</th></tr></thead><tbody>
+<tr><td>核心变量</td><td>Agent工程从Prompt→Context→Harness→Loop快速演进</td><td>工程环境比模型本身更决定结果</td></tr>
+<tr><td>创业焦点</td><td>从「做AI产品」转移到「产品+建组织+出海全球化」</td><td>产品只是创业的一个维度</td></tr>
+<tr><td>竞争格局</td><td>模型公司向下覆盖、Google布局通用Agent</td><td>必须找到模型公司做不了的事</td></tr>
+<tr><td>时间窗口</td><td>OpenClaw引爆Agent生态→国产模型变现突破</td><td>窗口期以月计，不是以年计</td></tr>
+</tbody></table>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>二、知识图谱 · 7大核心模型关系</h2><p class="d">以Harness工程模型为核心枢纽的结构关系网络</p></div>
+<div class="sb">
+<div class="gi">
+<svg viewBox="0 0 680 520" width="100%" role="img"><title>Founder Park 知识图谱</title>
+<defs><marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<text x="340" y="22" text-anchor="middle" font-size="14" font-weight="500" fill="#1a1a1a">7大核心知识模型关系图</text>
+<line x1="340" y1="82" x2="340" y2="210" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="195" y1="148" x2="245" y2="238" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="435" y1="238" x2="485" y2="148" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="245" y1="238" x2="195" y2="338" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="340" y1="266" x2="340" y2="400" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="435" y1="238" x2="485" y2="338" stroke="rgba(0,0,0,.12)" stroke-width="1" stroke-dasharray="4 3"/>
+<line x1="195" y1="338" x2="245" y2="428" stroke="rgba(0,0,0,.08)" stroke-width=".5" stroke-dasharray="3 3"/>
+<line x1="435" y1="428" x2="485" y2="338" stroke="rgba(0,0,0,.08)" stroke-width=".5" stroke-dasharray="3 3"/>
+<rect x="250" y="44" width="180" height="38" rx="8" fill="#FBEAF0" stroke="#ED93B1" stroke-width=".5"/>
+<text x="340" y="62" text-anchor="middle" font-size="13" font-weight="500" fill="#72243E">Loop 自进化模型</text>
+<text x="340" y="76" text-anchor="middle" font-size="11" fill="#993556">系统自运行 · Agent=项目中心</text>
+<rect x="230" y="210" width="220" height="56" rx="10" fill="#EEEDFE" stroke="#AFA9EC" stroke-width=".5"/>
+<text x="340" y="230" text-anchor="middle" font-size="14" font-weight="500" fill="#3C3489">Harness 工程模型</text>
+<text x="340" y="246" text-anchor="middle" font-size="11" fill="#534AB7">核心枢纽 · 效果由环境决定</text>
+<text x="340" y="258" text-anchor="middle" font-size="10" fill="#7F77DD">Prompt→Context→Harness→Loop</text>
+<rect x="55" y="128" width="140" height="40" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width=".5"/>
+<text x="125" y="146" text-anchor="middle" font-size="12" font-weight="500" fill="#0C447C">Agent 能力公式</text>
+<text x="125" y="160" text-anchor="middle" font-size="10" fill="#185FA5">模型×Harness×数据×环境</text>
+<rect x="485" y="128" width="140" height="40" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width=".5"/>
+<text x="555" y="146" text-anchor="middle" font-size="12" font-weight="500" fill="#085041">AI-Native 组织</text>
+<text x="555" y="160" text-anchor="middle" font-size="10" fill="#0F6E56">FDE=PMF · 公司=Agent</text>
+<rect x="55" y="318" width="140" height="40" rx="8" fill="#FAECE7" stroke="#F0997B" stroke-width=".5"/>
+<text x="125" y="336" text-anchor="middle" font-size="12" font-weight="500" fill="#712B13">品味稀缺模型</text>
+<text x="125" y="350" text-anchor="middle" font-size="10" fill="#993C1D">实现趋零 · 品味=最稀缺</text>
+<rect x="250" y="400" width="180" height="40" rx="8" fill="#FAEEDA" stroke="#EF9F27" stroke-width=".5"/>
+<text x="340" y="418" text-anchor="middle" font-size="12" font-weight="500" fill="#633806">真实工作流数据</text>
+<text x="340" y="432" text-anchor="middle" font-size="10" fill="#854F0B">Type1>Type2 · 4乘数判断</text>
+<rect x="485" y="318" width="140" height="40" rx="8" fill="#EAF3DE" stroke="#97C459" stroke-width=".5"/>
+<text x="555" y="336" text-anchor="middle" font-size="12" font-weight="500" fill="#27500A">出海架构模型</text>
+<text x="555" y="350" text-anchor="middle" font-size="10" fill="#3B6D11">C-Corp · Vesting · QSBS</text>
+<line x1="40" y1="470" x2="640" y2="470" stroke="rgba(0,0,0,.06)" stroke-width=".5"/>
+<text x="40" y="488" font-size="11" font-weight="500" fill="#6b6b6b">概念演进时间线</text>
+<circle cx="95" cy="506" r="4" fill="#AFA9EC"/><text x="105" y="510" font-size="10" fill="#6b6b6b">2023 Prompt</text>
+<circle cx="205" cy="506" r="4" fill="#85B7EB"/><text x="215" y="510" font-size="10" fill="#6b6b6b">2025 Context</text>
+<circle cx="315" cy="506" r="4" fill="#534AB7"/><text x="325" y="510" font-size="10" fill="#6b6b6b">2026.02 Harness</text>
+<circle cx="435" cy="506" r="4" fill="#ED93B1"/><text x="445" y="510" font-size="10" fill="#6b6b6b">2026.06 Loop</text>
+<circle cx="525" cy="506" r="4" fill="#B4B2A9"/><text x="535" y="510" font-size="10" fill="#6b6b6b">未来 Environment?</text>
+</svg>
+</div>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>三、知识卡片 · 7大模型详解</h2><p class="d">每张卡片含定义、关键证据、架构/模块、应用和来源</p></div>
+<div class="sb"><div class="cg">
+<div class="kc kp"><div class="kh"><div class="kt">Harness 工程模型</div><div class="ks">核心枢纽 · 12+篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>Agent效果由运行环境决定，不是由模型决定。Harness编排执行流程、管理上下文、调用工具、评估结果。
+<div class="kl">关键证据</div><ul><li>WorkBuddy 72%→90%</li><li>LangChain 52.8%→66.5%</li><li>ClackyAI 成本差6倍</li><li>Claude Code 512K行</li><li>Pi &lt;1000 tokens</li></ul>
+<div class="kl">五层架构</div>运行环境层 · 引导层 · 反馈层 · 编排层 · 迭代层
+<div class="kl">局限</div>简单约束会被模型进步吞掉，但生产级约束（审计/权限/恢复）不会</div>
+<div class="kf">WorkBuddy/Harness/Claude Code/ClackyAI/Pi (2026.2-7)</div></div>
+<div class="kc kb2"><div class="kh"><div class="kt">Agent 能力公式</div><div class="ks">护城河判断 · 5篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>AI能力 = (模型 × Harness)(数据 × 环境)
+<div class="kl">三阶段护城河</div><ul><li>当下：模型为王，套壳有短暂窗口</li><li>1-2年：Harness为王</li><li>终局：数据与环境为王</li></ul>
+<div class="kl">关键数据</div>DeepSeek成本1/20 · Cursor自研模型低一个量级 · OpenClaw单任务百万Token
+<div class="kl">应用</div>Benchmark可衡量→不做；工作流粘性→做</div>
+<div class="kf">Harness到Environment/Cursor/DeepSeek/OpenClaw (2026.4-5)</div></div>
+<div class="kc kk"><div class="kh"><div class="kt">Loop 自进化模型</div><div class="ks">Agent终局形态 · 5篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>从「人发prompt」到「系统发prompt」，Agent成为项目中心
+<div class="kl">五模块</div>任务发现 · 任务分配 · 结果检查 · 状态记录 · 下一步决定
+<div class="kl">关键引用</div>Boris Cherny: "我不再给Claude写提示词了，我写循环"<br>翁荔：自进化在Harness不在模型权重
+<div class="kl">进化路径</div>写代码 → 开10个AI并行 → 设计循环让AI自己跑</div>
+<div class="kf">Loop Engineering/翁荔长文/Pi框架/Loop产品思考 (2026.6-7)</div></div>
+<div class="kc kt2"><div class="kh"><div class="kt">AI-Native 组织模型</div><div class="ks">7篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>不是「用AI工具的组织」，而是围绕Agent能力重新设计流程和角色的组织
+<div class="kl">核心概念</div><ul><li>FDE = Agent时代的PMF</li><li>组织即护城河（Jaya Gupta）</li><li>公司压缩成一个Agent（Block CEO）</li><li>先Pivot组织再Pivot产品（CREAO）</li></ul>
+<div class="kl">关键证据</div>YC组织改造 · Anthropic组织发明 · CREAO 20人每天8功能
+<div class="kl">局限</div>组织变革比技术变革更慢更难</div>
+<div class="kf">YC/Anthropic/FDE/Block/CREAO/Jaya Gupta (2026.5-7)</div></div>
+<div class="kc kc2"><div class="kh"><div class="kt">品味稀缺模型</div><div class="ks">4篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>实现成本趋零后，品味（该做什么）成为最稀缺资源
+<div class="kl">品味四维度</div>审美与系统思维 · 方向性判断 · 表达与交互 · 信号噪音分辨
+<div class="kl">关键引用</div>Codex负责人: "无限tokens的世界里不能生产垃圾内容"<br>Sarah Guo: Benchmark可衡量的不该是创业方向
+<div class="kl">应用</div>产品方向选择 · 团队招聘标准 · dogfooding文化</div>
+<div class="kf">Codex负责人/a16z品牌/尊重常识/LibTV (2026.6-7)</div></div>
+<div class="kc kg"><div class="kh"><div class="kt">出海架构模型</div><div class="ks">5篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>投资人投的是公司不是产品，可融资架构是第一步
+<div class="kl">五要素</div>特拉华C-Corp · 持股+公司治理 · 期权池 · IP保护 · 融资+退出策略
+<div class="kl">关键规则</div>Vesting 4年+1年Cliff · QSBS持有3年免税 · 避免50:50 · 董事会奇数
+<div class="kl">中美差异</div>连带责任(中国有美无) · 赎回权(中国有美无) · 否决权(中国更长)</div>
+<div class="kf">出海架构/法律/收款/达人营销 (2026.6)</div></div>
+<div class="kc ka"><div class="kh"><div class="kt">真实工作流数据模型</div><div class="ks">3篇验证</div></div>
+<div class="kb"><div class="kl">定义</div>企业真实工作流数据(Type 1)比人为构造数据(Type 2)更有训练价值
+<div class="kl">四乘数判断</div>数据独特性 × Eval清晰度 × 任务频率 × 单次改善价值（任一≈0则不成立）
+<div class="kl">关键概念</div>Hillclimbability: pass@1=0%但pass@32=30%<br>Verifier's Law: 可衡量=可优化
+<div class="kl">应用</div>企业是否该自训模型的决策框架</div>
+<div class="kf">真实工作流数据/Cursor RL/ICML (2026.5-7)</div></div>
+</div></div></div>
+
+<div class="sec"><div class="sh"><h2>四、为什么 · 根因追溯</h2><p class="d">这些知识为什么在2026年上半年集中爆发</p></div>
+<div class="sb">
+<div class="eq" style="border-left-color:var(--t200)">模型能力跃升让Agent从概念变为可用产品，可用产品暴露了大量工程、组织、商业层面的新问题——这些问题的解法构成了Founder Park的知识体系。</div>
+<table class="et"><thead><tr><th>因</th><th>果</th><th>逻辑</th></tr></thead><tbody>
+<tr><td>模型能力达到Agent可用门槛</td><td>Harness/Loop Engineering爆发</td><td>能力够了，瓶颈转移到工程层</td></tr>
+<tr><td>OpenClaw开源通用Agent框架</td><td>Agent创业从概念变为实战</td><td>基础设施就位，应用层爆发</td></tr>
+<tr><td>基座模型每次更新覆盖应用</td><td>创业者转向模型做不了的领域</td><td>防御策略驱动方向选择</td></tr>
+<tr><td>Agent能完成真实工作</td><td>传统组织架构不匹配</td><td>工具变了，组织必须跟着变</td></tr>
+<tr><td>OpenClaw催生超级Token消耗</td><td>国产模型变现突破并出海</td><td>有了收入验证，加速全球化</td></tr>
+</tbody></table>
+<div style="margin-top:16px">
+<div style="font-size:13px;font-weight:600;margin-bottom:8px">为什么Harness比模型更重要？</div>
+<p style="font-size:13px;color:var(--t2);margin-bottom:8px">大语言模型是概率系统（非确定性），商业世界要求确定性结果。模型负责生成，Harness负责约束——让概率系统的输出变为可预测的结果。</p>
+<ul style="font-size:13px;color:var(--t2);padding-left:20px">
+<li>模型是「无状态函数」——不记住上次对话，知识有截止日期</li>
+<li>Harness提供所有有状态能力——记忆、进度、上下文、权限、审计</li>
+<li>模型变强≠不需要Harness——权限/审计/缓存解决的是「概率系统的确定性保证」问题</li>
+</ul>
+</div>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>五、怎么做 · 系统建模</h2><p class="d">类-属性-方法-路由模型</p></div>
+<div class="sb">
+<div class="eq" style="border-left-color:var(--b200)">Founder Park的知识体系建模为AI创业认知操作系统——属性是「怎么看AI创业」，方法是「怎么判断和执行」，路由是「不同场景用什么策略」。</div>
+<div style="margin-bottom:16px">
+<div style="font-size:13px;font-weight:600;margin-bottom:6px;color:var(--p800)">属性（Attributes）—— 怎么看AI创业</div>
+<ul style="font-size:13px;color:var(--t2);padding-left:20px">
+<li>技术认知：Harness &gt; 模型 &gt; Prompt</li>
+<li>竞争认知：模型公司做不了的才是方向</li>
+<li>组织认知：AI-Native &gt; 用AI的传统组织</li>
+<li>全球化认知：出海是Day 1决策</li>
+<li>数据认知：真实工作流数据是核心资产</li>
+</ul>
+</div>
+<div style="margin-bottom:16px">
+<div style="font-size:13px;font-weight:600;margin-bottom:6px;color:var(--b800)">方法（Methods）—— 怎么判断和执行</div>
+<ul style="font-size:13px;color:var(--t2);padding-left:20px">
+<li>Agent产品开发：模型→Harness→上下文→Loop</li>
+<li>护城河判断：Benchmark可衡量→不做；工作流粘性→做</li>
+<li>出海架构：特拉华C-Corp + Vesting + QSBS</li>
+<li>组织改造：FDE + Agent开放 + 流程压缩</li>
+<li>增长方法：达人营销全漏斗 + ToC增长</li>
+<li>品味培养：dogfooding + 信号分辨</li>
+</ul>
+</div>
+<div>
+<div style="font-size:13px;font-weight:600;margin-bottom:6px;color:var(--t800)">路由（Routes）—— 场景适配</div>
+<table class="rt"><thead><tr><th>场景</th><th>策略</th></tr></thead><tbody>
+<tr><td>做Agent产品</td><td>Harness工程模型 + Agent能力公式</td></tr>
+<tr><td>做AI硬件</td><td>硬件是脚手架 + Agent是壁垒 + 线下渠道是终局</td></tr>
+<tr><td>建AI组织</td><td>FDE模式 + YC组织改造 + 压缩成Agent</td></tr>
+<tr><td>出海创业</td><td>特拉华C-Corp + 达人营销 + 海外收款</td></tr>
+<tr><td>选创业方向</td><td>Benchmark避坑 + Mission驱动 + 防御模型覆盖</td></tr>
+<tr><td>默认策略</td><td>尊重常识 + 快速验证 + 不要过度工程</td></tr>
+</tbody></table>
+</div>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>六、矛盾与张力 · 诚实标注</h2><p class="d">矛盾是知识体系的特征，不是需要修复的Bug</p></div>
+<div class="sb">
+<div class="cg2">
+<div class="cc" style="background:var(--p50);border-color:var(--p200)">
+<h4 style="color:var(--p800)">Harness 该厚该薄？</h4>
+<div class="vs"><div class="vss">厚：Claude Code 512K行</div><div class="vsp">vs</div><div class="vss">薄：Pi &lt;1000 tokens</div></div>
+<p style="font-size:12px;color:var(--t2)">两者都在Terminal Bench前五名</p>
+<div class="res" style="background:var(--p200);color:var(--p800)">匹配模型能力才是关键</div>
+</div>
+<div class="cc" style="background:var(--b50);border-color:var(--b200)">
+<h4 style="color:var(--b800)">多Agent vs 单Agent？</h4>
+<div class="vs"><div class="vss">多：Claude Code Sub-Agent</div><div class="vsp">vs</div><div class="vss">单：ClackyAI/Pi 反模式</div></div>
+<p style="font-size:12px;color:var(--t2)">单Agent+好Harness足够；探索型任务除外</p>
+<div class="res" style="background:var(--b200);color:var(--b800)">并行开发是反模式</div>
+</div>t200)">
+<h4 style="color:var(--t800)">零融资 vs 重资本？</h4>
+<div class="vs"><div class="vss">零：GlobalGPT千万ARR</div><div class="vsp">vs</div><div class="vss">重：DeepSeek 500亿</div></div>
+<p style="font-size:12px;color:var(--t2)">取决于赛道：toC应用可零融资，基座模型必须重资本</p>
+<div class="res" style="background:var(--t200);color:var(--t800)">赛道决定资本策略</div>
+</div>
+</div>
+<div class="cc" style="background:var(--c50);border-color:var(--c200);grid-column:1/-1">
+<h4 style="color:var(--c800)">模型覆盖焦虑 vs 数据飞轮护城河？</h4>
+<div class="vs"><div class="vss">焦虑：基座模型每次更新覆盖一批应用</div><div class="vsp">vs</div><div class="vss">护城河：用户行为数据+工作流粘性</div></div>
+<p style="font-size:12px;color:var(--t2)">真相：护城河有保质期，关键是数据和环境深度</p>
+<div class="res" style="background:var(--c200);color:var(--c800)">保质期结构：简单约束会消失，生产级约束不会</div>
+</div>
+</div>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>七、引用溯源</h2><p class="d">每条知识模型均可追溯到具体文章</p></div>
+<div class="sb">
+<table class="et"><thead><tr><th>知识模型</th><th>来源文章数</th><th>关键文章</th></tr></thead><tbody>
+<tr><td>Harness工程模型</td><td>12+</td><td>WorkBuddy复盘、Harness Engineering、Claude Code拆解、ClackyAI复盘、Pi框架</td></tr>
+<tr><td>Agent能力公式</td><td>5</td><td>从Harness到Environment、Cursor拆解、DeepSeek分析、OpenClaw变现</td></tr>
+<tr><td>AI-Native组织模型</td><td>7</td><td>YC组织改造、Anthropic拆解、FDE=PMF、Jaya Gupta、Block CEO、CREAO</td></tr>
+<tr><td>品味稀缺模型</td><td>4</td><td>Codex负责人、a16z品牌、做AI产品尊重常识、LibTV用户教产品</td></tr>
+<tr><td>出海架构模型</td><td>5</td><td>出海企业架构、去美国创业法律、海外收款避坑、达人营销全流程</td></tr>
+<tr><td>真实工作流数据模型</td><td>3</td><td>真实工作流训练数据、Cursor RL、ICML四天</td></tr>
+<tr><td>Loop自进化模型</td><td>5</td><td>Loop Engineering、Loop产品思考、Pi框架、翁荔Harness自进化、OpenClaw</td></tr>
+</tbody></table>
+</div></div>
+
+<div class="sec"><div class="sh"><h2>八、7维采集统计</h2><p class="d">7路并行Agent按主题维度采集</p></div>
+<div class="sb">
+<table class="et"><thead><tr><th>维度</th><th>文章数</th><th>知识点</th><th>核心主题</th></tr></thead><tbody>
+<tr><td>AI与技术</td><td>8</td><td>~45</td><td>训练数据、世界模型、ICML趋势、DeepSeek、OpenClaw</td></tr>
+<tr><td>创业方法论</td><td>7</td><td>20</td><td>创业幻觉、零融资、Mission驱动、出海架构</td></tr>
+<tr><td>产品与增长</td><td>7</td><td>~35</td><td>尊重常识、ToC增长、品牌方法论、Notion复盘</td></tr>
+<tr><td>组织与管理</td><td>7</td><td>42</td><td>FDE、AI-Native改造、组织护城河、层级重构</td></tr>
+<tr><td>Agent工程</td><td>8</td><td>49</td><td>Harness/Loop Engineering、Claude Code、Pi、护城河</td></tr>
+<tr><td>出海全球化</td><td>7</td><td>~38</td><td>日本市场、海外收款、达人营销、硬件出海</td></tr>
+<tr><td>硬件与行业</td><td>7</td><td>~35</td><td>AI硬件设计、安克方法论、独角兽盘点</td></tr>
+<tr style="font-weight:600"><td>合计</td><td>51</td><td>~255</td><td>7维度覆盖</td></tr>
+</tbody></table>
+</div></div>
+
+</div>
+<footer>本质工坊 · 知识蒸馏 · 三阶方法论 × 坡度理解 × 类-属性-方法-路由<br>数据来源：Founder Park 公众号 2026年1月1日-7月28日 51篇深度文章</footer>
+</body>
+</html>
